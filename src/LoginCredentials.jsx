@@ -1,15 +1,40 @@
-import React from 'react.jsx';
+import React from 'react';
 
  export default class LoginCredentials extends React.Component{
    render(){
      return(
-       <div>
+
+       <table>
+       <tbody>
+       <tr>
+       <td>
        <label>Sign in to SmartAudit</label>
+       </td>
+       </tr>
+       <tr>
+       <td>
         <label>Enter your email and password</label>
+        </td>
+        </tr>
+        <tr>
+        <td>
         <input type="text" placeholder="Email"/>
+        </td>
+        </tr>
+        <tr>
+        <td>
         <input type="text" placeholder="Password"/>
+        </td>
+        </tr>
+        <tr>
+        <td>
           <input type="button" value="Login"/>
-       </div>
+          </td>
+          </tr>
+               </tbody>
+       </table>
+
+
      )
    }
  }

@@ -1,18 +1,20 @@
-import React from 'react.jsx';
-import LoginCredentials from './src/LoginCredentials.jsx';
+import React from 'react';
+import LoginCredentials from './LoginCredentials.jsx';
 
 export  default class LoginButton extends React.Component{
   constructor(props){
-    super(props)
+    super(props);
+    this.state = {showComponent:false};
       this.handleEvent = this.handleEvent.bind(this);
     }
     handleEvent(){
-      window.open(<LoginCredentials />);
+      this.setState({showComponent:true});
   }
   render(){
     return(
       <div>
-      <input type='text' onClick={this.handleEvent}/>
+      <input type='button' value="Login" onClick={this.handleEvent}/>
+      {this.state.showComponent?<LoginCredentials />:null}
       </div>
     )
   }

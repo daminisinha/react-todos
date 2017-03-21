@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Input from './Input.jsx';
+import LoginButton from './LoginButton.jsx';
 export default class App extends React.Component{
 
   render(){
     return(
 <div>
-<Input />
+<LoginButton />
 </div>
     )
   }
