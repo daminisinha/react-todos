@@ -15,9 +15,9 @@ export  default class LoginButton extends React.Component{
             </div>
             <div className="modal-body text-center" >
             <label>Enter your email and password </label><br/>
-            <input type="text" className="form-control input-lg"  placeholder="Email"/>
-            <input type="password" className="form-control input-lg" placeholder="Password"/><br/>
-            <button type="button" className="btn btn-success btn-lg" >Login</button>
+            <input type="text" id="email" className="form-control input-lg"  placeholder="Email"/>
+              <input type="password" className="form-control input-lg" placeholder="Password"/><br/>
+            <button type="button" className="btn btn-success btn-lg btn-block" >Login</button>
             </div>
             <div className="modal-footer">
 
